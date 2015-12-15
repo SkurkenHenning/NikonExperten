@@ -1,0 +1,35 @@
+﻿@using RepoNE
+@model Kategori
+@{
+    ViewBag.Title = "RedigerKategori";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="row">
+    <div class="twelve columns">
+        <h2>RedigerKategori</h2>
+        <form name="myForm" action="/Admin/Admin/RedigerKategori/" enctype="multipart/form-data" method="POST">
+            Navn:
+            <br/>
+            <input id="Navn" name="Navn" type="text" value="@Model.Navn"/>
+            <br/>
+            Tekst:
+            <br/>
+            <textarea id="Tekst" name="Tekst" rows="2" cols="20">@Model.Tekst</textarea>
+            <br/>
+            Nyt Billede:
+            <br/>
+            <input id="Fil" name="Fil" type="file"/>
+            <br/>
+            Nuværende billede:
+            <br/>
+            <img src="~/Content/images/kategorier/@Model.Billede"/>
+            <input id="Billede" name="Billede" type="hidden" value="@Model.Billede"/>
+            <br/>
+            <input id="Submit1" type="submit" value="Gem" />
+            <input id="ID" name="ID" type="hidden" value="@Model.ID" />
+        </form>
+    </div>
+</div>
+
+

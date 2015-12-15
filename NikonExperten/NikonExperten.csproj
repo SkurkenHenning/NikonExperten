@@ -218,6 +218,9 @@
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\OpretKategori.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\OpretProdukt.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\SletRedigerKategori.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\RedigerKategori.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\RedigerProdukt.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
