@@ -16,7 +16,9 @@ namespace NikonExperten.Areas.Admin.Controllers
             // GET: Admin/Admin
         public ActionResult Index()
         {
+
             return View();
+
         }
 
         public ActionResult OpretKategori()
