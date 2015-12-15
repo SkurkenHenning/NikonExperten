@@ -1,0 +1,67 @@
+﻿@using RepoNE
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="~/Content/css/normalize.css" rel="stylesheet" />
+    <link href="~/Content/css/skeleton.css" rel="stylesheet" />
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="/Content/images/favicon.png">
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+</head>
+
+<body>
+@{
+    MenuNavFac mf = new MenuNavFac();
+}
+
+<div class="container">
+    <div class="row margin-bottom--5">
+        <div class="twelve">
+            <img src="~/Content/images/Header.JPG" class="u-max-full-width"/>
+        </div>
+    </div>
+    <div class="row nav">
+        <div class="twelve columns nav-height border-top-bottom">
+            <ul class="nav-margin-left">
+                
+                @foreach (MenuNav mn in mf.GetAll())
+                {
+                    <li class="nav-padding-left"><a href="#">@mn.Links</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    @RenderBody()
+</div>
+<div class="container">
+    <footer class="row">
+        <div class="twelve columns">
+            Copyright 2014 by NIKON experten
+        </div>
+    </footer>
+    <div class="row footer-hvid-boks">
+        <div class="twelve columns">
+            &nbsp;
+        </div>
+    </div>
+</div>
+</body>
+</html>

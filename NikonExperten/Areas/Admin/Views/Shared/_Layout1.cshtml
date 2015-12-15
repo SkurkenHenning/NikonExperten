@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="~/Areas/Admin/Content/css/normalize.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/skeleton.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/styles.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/styles.css" rel="stylesheet" />
+    <link href="/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Javascript
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="~/Areas/Admin/Content/JS/jquery-1.9.1.min.js"></script>
+    <script src="~/Areas/Admin/Content/JS/script.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../Content/images/favicon.png">
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns top-streamer">
+                <h1 class="headerh1">CMS Nikon experten</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div id='cssmenu'>
+                    <ul>
+                        <li><a href='Default.aspx'>Homer</a></li>
+                        <li class='active has-sub'>
+                            <a href='#'>Kategorier</a>
+                            <ul>
+                                <li><a href='/Admin/Default/OpretKategori/'>Opret</a></li>
+                                <li><a href='/Admin/Default/SletKategori/'>Rediger/slet</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'>
+                            <a href='#'>Produkter</a>
+                            <ul>
+                                <li><a href='/Admin/Default/OpretProdukt/'>Opret</a></li>
+                                <li><a href='RedigerSletProdukt.aspx'>Rediger/slet</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'>
+                            <a href='#'>Sider</a>
+                            <ul>
+                                <li><a href='#'>Home</a></li>
+                                <li><a href='InformationEdit.aspx'>Information</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'>
+                            <a href='#'>Kontakt</a>
+                            <ul>
+                                <li><a href='KontaktEdit.aspx'>Kontakt</a></li>
+                                <li><a href='RedigerFormular.aspx'>Formular</a></li>
+                            </ul>
+                        </li>
+                        @*<asp:Literal ID="litBruger" runat="server" />*@
+                        <li class='active has-sub'>
+                            <a href='#'>Diverse</a>
+                            <ul>
+                                <li><a href="dbLogUd.aspx">Log Ud</a></li>
+                                <li><a href='../Default.aspx'>Vis Side</a></li>
+                                <li><a href="#">Min Profil</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'>
+                            <a href='#'>Ordrer historik</a>
+                            <ul>
+                                <li><a href='OrdreHistorik.aspx'>Nye</a></li>
+                                <li><a href='RedigerFormular.aspx'>Formular</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        @RenderBody()
+        </div>
+</body>
+</html>

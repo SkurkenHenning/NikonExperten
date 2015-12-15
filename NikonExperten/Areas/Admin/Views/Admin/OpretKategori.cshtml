@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "OpretKategori";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>OpretKategori</h2>
+<form name="myForm" action="/Admin/Admin/OpretKategori/" enctype="multipart/form-data" method="POST">
+    Navn:
+    <br/>
+    <input id="Navn" name="Navn" type="text"/>
+    <br/>
+    Tekst:
+    <br/>
+    <textarea id="Tekst" name="Tekst" rows="2" cols="20"></textarea>
+    <br/>
+    Billede:
+    <br/>
+    <input id="Billede" name="Billede" type="file"/>
+    <br/>
+    <input id="Submit1" type="submit" value="Opret"/>
+    @ViewBag.MSG
+</form>

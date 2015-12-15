@@ -1,0 +1,49 @@
+﻿@using RepoNE
+@model List<Kategori>
+@{
+    ViewBag.Title = "OpretProdukt";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+<div class="twelve columns">
+    <h2>OpretProdukt</h2>
+    <form name="myForm" action="/Admin/Admin/OpretProdukt/" enctype="multipart/form-data" method="POST">
+        <select id="Select1">
+            @foreach (Kategori k in Model)
+            {
+                <option value="@k.ID">@k.Navn</option>
+            }
+        </select>
+        <br/>
+        Navn:
+        <br/>
+        <input id="Navn" name="Navn" type="text"/>
+        <br/>
+        Tekst:
+        <br/>
+        <textarea id="Tekst" name="Tekst" rows="2" cols="20"></textarea>
+        <br/>
+        Billede:
+        <br/>
+        <input id="Billede" name="Billede" type="file"/>
+        <br/>
+        Pris:
+        <br/>
+        <input id="Pris" name="Pris" type="text"/>
+        <br/>
+        Tilbuds pris:
+        <br/>
+        <input id="Tilbudspris" name="Tilbudspris" type="text"/>
+        <br/>
+        Varenummer:
+        <br/>
+        <input id="Varenummer" name="Varenummer" type="text"/>
+        <br/>
+        Leveringstid:
+        <br/>
+        <input id="Leveringstid" name="Leveringstid" type="text" />
+        <br/>
+        <input id="Submit1" type="submit" value="Opret" />
+
+
+    </form>
+</div>
