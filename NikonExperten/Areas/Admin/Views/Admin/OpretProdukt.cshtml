@@ -7,7 +7,7 @@
 <div class="twelve columns">
     <h2>OpretProdukt</h2>
     <form name="myForm" action="/Admin/Admin/OpretProdukt/" enctype="multipart/form-data" method="POST">
-        <select id="Select1">
+        <select id="Select1" name="KatID">
             @foreach (Kategori k in Model)
             {
                 <option value="@k.ID">@k.Navn</option>

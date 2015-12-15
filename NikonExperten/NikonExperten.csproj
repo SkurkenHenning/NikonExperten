@@ -229,6 +229,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\Images\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Content\images\Produkter\" />
     <Folder Include="Helpers\" />
     <Folder Include="Models\" />
   </ItemGroup>

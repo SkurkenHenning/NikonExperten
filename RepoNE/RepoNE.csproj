@@ -49,6 +49,7 @@
     <Compile Include="Models\Kategori.cs" />
     <Compile Include="Models\MenuNav.cs" />
     <Compile Include="Models\Produkt.cs" />
+    <Compile Include="Models\Viewmodels\KategoriProduktliste.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
