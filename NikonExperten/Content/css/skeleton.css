@@ -227,6 +227,12 @@ p {
     color: Black !Important;
 }
 
+.ProduktNavn {
+    background-color: #d8d8d8;
+    min-height: 35px;
+    width: 100%;
+}
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {

@@ -1,15 +1,25 @@
-﻿
+﻿@using RepoNE
+@using RepoNE.Models.Viewmodels
+@model ProduktListe
 @{
     ViewBag.Title = "ProduktListe";
     Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h2>ProduktListe</h2>
+
 
 <div class="row kategori-hvid-boks">
-    <table>
+    <div class="three columns">
+        <h5><strong>DSLR Kamera</strong></h5>
+    </div>
+    <div class="nine columns">
         <ul>
-            <li></li>
+            @foreach (Produkt p in Model.listProdukt)
+            {
+                <li class="ProduktNavn">Test</li>
+            }
+            
         </ul>
-    </table>
+    </div>
+
 </div>
