@@ -186,6 +186,7 @@
     <Content Include="Content\images\kategorier\Objektiv.jpg" />
     <Content Include="Content\images\kategorier\Statov.png" />
     <Content Include="Content\images\kategorier\Tilbud.gif" />
+    <Content Include="Content\images\OmOs\Butik.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -220,7 +221,7 @@
     <Content Include="Areas\Admin\Views\Admin\OpretProdukt.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\SletRedigerKategori.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\RedigerKategori.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\RedigerProdukt.cshtml" />
+    <Content Include="Views\Default\OmOs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

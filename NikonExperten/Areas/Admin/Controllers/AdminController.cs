@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using RepoNE;
 using RepoNE.Factories;
+using RepoNE.Models.Viewmodels;
 
 namespace NikonExperten.Areas.Admin.Controllers
 {
@@ -111,15 +112,11 @@ namespace NikonExperten.Areas.Admin.Controllers
             return View("SletRedigerKategori", kf.GetAll());
         }
 
-        public ActionResult RedigerProdukt(int id)
+        public ActionResult SletRedigerProdukt(KategoriProduktliste kpList)
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult RedigerProdukt()
-        {
-            return View(pf.Get(id));
-        }
+        
 
 
     }

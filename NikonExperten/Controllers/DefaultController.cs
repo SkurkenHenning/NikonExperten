@@ -12,11 +12,18 @@ namespace NikonExperten.Controllers
     {
         KategoriFac kf = new KategoriFac();
         MenuNavFac mnFac = new MenuNavFac();
+        OmOsFac OO = new OmOsFac();
         // GET: Default
         public ActionResult Index(Kategori k)
         {
 
             return View(kf.GetAll());
+        }
+
+        public ActionResult OmOs()
+        {
+
+            return View(OO.Get(2));
         }
     }
 }
