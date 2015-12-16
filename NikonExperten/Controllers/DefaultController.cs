@@ -25,5 +25,11 @@ namespace NikonExperten.Controllers
 
             return View(OO.Get(2));
         }
+
+        public ActionResult ProduktListe()
+        {
+
+            return View(OO.GetAll());
+        }
     }
 }
