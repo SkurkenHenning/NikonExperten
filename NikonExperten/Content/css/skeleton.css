@@ -223,6 +223,7 @@ p {
     color: #fbb039;
 }
 
+<<<<<<< HEAD
 .adresseform {
     border: 1px solid lightgray;
     height: 220px;
@@ -256,6 +257,10 @@ p {
 .blackp {
     color: black !important;
     margin-top: -30px !important;
+=======
+.OmOsTekst {
+    color: Black !Important;
+>>>>>>> origin/master
 }
 
 /* Typography

@@ -1,0 +1,28 @@
+﻿@using RepoNE
+@model List<Kategori>
+@{
+    ViewBag.Title = "SletRedigerKategori";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+<div class="row">
+    <div class="twelve columns">
+        
+        <h2>SletRedigerKategori</h2>
+        <table>
+            @foreach (Kategori k in Model)
+            {
+                <tr>
+                    <td>@k.Navn</td>
+                    <td><a href="/Admin/Admin/SletRedigerKategoriResult/@k.ID">Slet</a></td>
+                    <td><a href="/Admin/Admin/RedigerKategori/@k.ID">Rediger</a></td>
+                </tr>
+            }
+
+        </table>
+
+
+
+    </div>
+</div>
+
+

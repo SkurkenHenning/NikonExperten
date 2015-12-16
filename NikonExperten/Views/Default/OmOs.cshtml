@@ -1,0 +1,19 @@
+﻿@using RepoNE
+@model RepoNE.OmOs
+@{
+    ViewBag.Title = "OmOs";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+<div class="row kategori-hvid-boks">
+    <div class="six columns">
+        <h2>@Model.Overskrift</h2>
+        <p class="OmOsTekst">@Html.Raw(Model.Tekst)</p>
+    </div>
+    <br/>
+    <br/>
+    <div class="six columns ">
+        <img src="~/Content/images/OmOs/@Model.Billede" />
+    </div>
+</div>

@@ -58,6 +58,7 @@
     <Compile Include="Models\OmOs.cs" />
     <Compile Include="Models\Produkt.cs" />
     <Compile Include="Models\Viewmodels\KategoriProduktliste.cs" />
+    <Compile Include="Models\Viewmodels\ProduktListe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

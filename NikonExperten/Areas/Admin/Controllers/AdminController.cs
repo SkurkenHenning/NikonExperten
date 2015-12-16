@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using RepoNE;
 using RepoNE.Factories;
+using RepoNE.Models.Viewmodels;
 
 namespace NikonExperten.Areas.Admin.Controllers
 {
@@ -73,5 +74,50 @@ namespace NikonExperten.Areas.Admin.Controllers
             }
             return View("Index");
         }
+
+
+        public ActionResult SletRedigerKategori()
+        {
+            return View(kf.GetAll());
+        }
+
+        public ActionResult SletRedigerKategoriResult(int id)
+        {
+            kf.Delete(id);
+            return View("SletRedigerKategori", kf.GetAll());
+        }
+
+        public ActionResult RedigerKategori(int id)
+        {
+            return View(kf.Get(id));
+        }
+        [HttpPost]
+        public ActionResult RedigerKategori(Kategori k, HttpPostedFileBase Fil)
+        {
+            if (Fil != null)
+            {
+                Uploader u = new Uploader();
+                string path = Path.GetFullPath(Request.PhysicalApplicationPath + "Content/images/kategorier/");
+                string file = u.UploadImage(Fil, path, 200, true);
+
+                k.Billede = Path.GetFileName(file);
+                kf.Update(k);
+                @ViewBag.MSG = "Produktet er oprettet med det valgte billede";
+            }
+            else
+            {
+                kf.Update(k);
+                @ViewBag.MSG = "Produktet er oprettet med standard billede";
+            }
+            return View("SletRedigerKategori", kf.GetAll());
+        }
+
+        public ActionResult SletRedigerProdukt(KategoriProduktliste kpList)
+        {
+            return View();
+        }
+        
+
+
     }
 }
