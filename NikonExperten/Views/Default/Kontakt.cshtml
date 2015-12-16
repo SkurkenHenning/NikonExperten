@@ -1,0 +1,61 @@
+﻿@using RepoNE
+@model Kontakt
+@{
+    ViewBag.Title = "Kontakt";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+
+<div class="row kategori-hvid-boks">
+    <h2>Kontakt os</h2>
+    <div class="three columns">
+        <div class="adresseform">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="kontaktoverskrift">Vores adresse</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="adresseboks">
+                        <p class="blackp">@Model.Overskrift</p>
+                        <p class="blackp">@Model.Adresse</p>
+                        <p class="blackp">DK-@Model.PostNr @Model.ByNavn</p>
+                        <br/>
+                        <p class="blackp">Tlf: @Model.Tlf</p>
+                        <p class="blackp">Fax: @Model.Fax</p>
+                        <br/>
+                        <p class="blackp">@Model.Email</p>
+                        <p class="blackp">@Model.HjemmesideLink</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="three columns">
+        <div class="aabningstider">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="kontaktoverskrift">Åbningstider</div>
+                </div>
+                <div class="twelve columns">
+                    <div class="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="three columns">
+        <div class="sendmail">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="kontaktoverskrift">Send os en mail</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,11 +12,17 @@ namespace NikonExperten.Controllers
     {
         KategoriFac kf = new KategoriFac();
         MenuNavFac mnFac = new MenuNavFac();
+        KontaktFac konf = new KontaktFac();
         // GET: Default
         public ActionResult Index(Kategori k)
         {
 
             return View(kf.GetAll());
+        }
+
+        public ActionResult Kontakt(Kontakt kon)
+        {
+            return View(konf.Get(1));
         }
     }
 }
