@@ -1,0 +1,30 @@
+﻿@using RepoNE
+@model List<Kategori>
+@{
+    ViewBag.Title = "Produkter";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+<div class="row kategori-hvid-boks">
+    <div class="three columns kategori-rum">
+        <h5><strong>Produkter</strong></h5>
+    </div>
+    
+        @foreach (Kategori k in Model)
+        {
+            <div class="three columns">
+                <div class="forside-kategori-boks">
+                    <div class="forside-hvid-boks">
+                        <a href="/Default/ProduktListe/@k.ID"><img src="../Content/images/kategorier/@k.Billede" class="u-max-full-width" /></a><br />
+                        <br/>
+                    </div>
+                    <div class="kategori-sort-boks">
+                        <h1 class="orange h1">@k.Navn</h1>
+                    </div>
+                </div>
+            </div>
+        }
+            
+
+</div>

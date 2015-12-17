@@ -176,6 +176,14 @@
     <Content Include="Areas\Admin\Content\tinymce\LICENSE.TXT" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\css\skeleton.css" />
+    <Content Include="Content\images\Produkter\CF16.jpg" />
+    <Content Include="Content\images\Produkter\CF64.jpg" />
+    <Content Include="Content\images\Produkter\CoolPix110.jpg" />
+    <Content Include="Content\images\Produkter\CoolPixS01.jpg" />
+    <Content Include="Content\images\Produkter\CoolPixS800C.jpg" />
+    <Content Include="Content\images\Produkter\D3200.jpg" />
+    <Content Include="Content\images\Produkter\D600.jpg" />
+    <Content Include="Content\images\Produkter\D7100.jpg" />
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\Header.JPG" />
     <Content Include="Content\images\kategorier\Bateri.jpg" />
@@ -186,7 +194,19 @@
     <Content Include="Content\images\kategorier\Objektiv.jpg" />
     <Content Include="Content\images\kategorier\Statov.png" />
     <Content Include="Content\images\kategorier\Tilbud.gif" />
+    <Content Include="Content\images\Produkter\Manfrotto701.jpg" />
+    <Content Include="Content\images\Produkter\MSD16.jpg" />
+    <Content Include="Content\images\Produkter\MSD32.jpg" />
+    <Content Include="Content\images\Produkter\MSD64.jpg" />
+    <Content Include="Content\images\Produkter\MSD8.jpg" />
+    <Content Include="Content\images\Produkter\Nikon1.jpg" />
+    <Content Include="Content\images\Produkter\Nikon200f4.jpg" />
     <Content Include="Content\images\OmOs\Butik.jpg" />
+    <Content Include="Content\images\Produkter\R1C1.jpg" />
+    <Content Include="Content\images\Produkter\SB700.jpg" />
+    <Content Include="Content\images\Produkter\SD16GB.jpg" />
+    <Content Include="Content\images\Produkter\SD32GB.jpg" />
+    <Content Include="Content\images\Produkter\SP24-70.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -224,6 +244,7 @@
     <Content Include="Areas\Admin\Views\Admin\RedigerKategori.cshtml" />
     <Content Include="Views\Default\OmOs.cshtml" />
     <Content Include="Views\Default\ProduktListe.cshtml" />
+    <Content Include="Views\Default\Produkter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -235,7 +256,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\Images\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Content\images\Produkter\" />
     <Folder Include="Helpers\" />
     <Folder Include="Models\" />
   </ItemGroup>

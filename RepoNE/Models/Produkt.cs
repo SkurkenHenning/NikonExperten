@@ -17,5 +17,6 @@ namespace RepoNE
         public string Leveringstid { get; set; }
         public int Lagerantal { get; set; }
         public string Billede { get; set; }
+        public string Producent { get; set; }
     }
 }
