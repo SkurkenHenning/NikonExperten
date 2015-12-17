@@ -176,6 +176,11 @@
     <Content Include="Areas\Admin\Content\tinymce\LICENSE.TXT" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\css\skeleton.css" />
+    <Content Include="Content\images\Produkter\15cg9V1MI2015sVdOSBM12.jpg" />
+    <Content Include="Content\images\Produkter\15EZVVDlJ2015vhgZzfi12.jpg" />
+    <Content Include="Content\images\Produkter\16n6H5tEq2015ofjj2K512.jpg" />
+    <Content Include="Content\images\Produkter\16PkMb7by2015gyTYPc312.jpg" />
+    <Content Include="Content\images\Produkter\16TYP4xCJ2015jdXgNiX12.jpg" />
     <Content Include="Content\images\Produkter\CF16.jpg" />
     <Content Include="Content\images\Produkter\CF64.jpg" />
     <Content Include="Content\images\Produkter\CoolPix110.jpg" />
