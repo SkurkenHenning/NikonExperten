@@ -11,7 +11,6 @@ namespace RepoNE
         public int ID { get; set; }
         public int KatID { get; set; }
         public string Navn { get; set; }
-        public int Varenummer { get; set; }
         public decimal Pris { get; set; }
         public decimal Tilbudspris { get; set; }
         public string Leveringstid { get; set; }

@@ -250,7 +250,6 @@
     <Content Include="Views\Default\OmOs.cshtml" />
     <Content Include="Views\Default\Produktliste.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\SletRedigerProdukt.cshtml" />
-    <Content Include="Views\Default\ProduktListe.cshtml" />
     <Content Include="Views\Default\Produkter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
