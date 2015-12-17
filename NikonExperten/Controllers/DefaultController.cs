@@ -14,6 +14,7 @@ namespace NikonExperten.Controllers
         MenuNavFac mnFac = new MenuNavFac();
         KontaktFac konf = new KontaktFac();
         OmOsFac OO = new OmOsFac();
+        ProduktFac pf = new ProduktFac();
         // GET: Default
         public ActionResult Index(Kategori k)
         {
@@ -32,10 +33,15 @@ namespace NikonExperten.Controllers
             return View(OO.Get(2));
         }
 
-        public ActionResult Produktliste()
+        public ActionResult ProduktListe(int id)
         {
 
-            return View();
+            return View(pf.GetProduktListe(id));
+        }
+
+        public ActionResult Produkter()
+        {
+            return View(kf.GetAll());
         }
     }
 }

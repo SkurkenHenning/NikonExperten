@@ -268,6 +268,10 @@ p {
 .ProduktNavn {
     background-color: #d8d8d8;
     min-height: 35px;
+}
+
+.produktBorder {
+    border: 1px #d8d8d8 solid;
     width: 100%;
 }
 
@@ -281,6 +285,18 @@ p {
     height: 100px;
 }
 
+.produkt-kategori-boks {
+    border: 1px solid orange;
+}
+
+.produkt-hvid-boks {
+    background-color: white;
+    padding: 20px;
+}
+
+.kategori-rum {
+    min-height: 700px;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
