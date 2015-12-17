@@ -223,7 +223,6 @@ p {
     color: #fbb039;
 }
 
-<<<<<<< HEAD
 .adresseform {
     border: 1px solid lightgray;
     height: 220px;
@@ -233,9 +232,8 @@ p {
 }
 .aabningstider {
     border: 1px solid lightgray;
-    height: 150px;
-    width: 300px;
-    margin-left: -20px;
+    height: 180px;
+    width: 260px;
     background-color: white;
 }
 .sendmail {
@@ -257,16 +255,25 @@ p {
 .blackp {
     color: black !important;
     margin-top: -30px !important;
-=======
+}
+.Aabningsboks {
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
 .OmOsTekst {
     color: Black !Important;
->>>>>>> origin/master
 }
 
 .ProduktNavn {
     background-color: #d8d8d8;
     min-height: 35px;
     width: 100%;
+}
+.tableKon {
+}
+.trKon {
+    
 }
 
 /* Typography
@@ -397,7 +404,9 @@ textarea {
 textarea {
   min-height: 65px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+    resize: none;
+}
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -465,9 +474,8 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+    padding-left: 10px;
+  text-align: left; }
 th:first-child,
 td:first-child {
   padding-left: 0; }

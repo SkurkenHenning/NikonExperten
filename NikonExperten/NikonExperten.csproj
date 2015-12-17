@@ -219,14 +219,11 @@
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\OpretKategori.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\OpretProdukt.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Default\Kontakt.cshtml" />
-=======
     <Content Include="Areas\Admin\Views\Admin\SletRedigerKategori.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\RedigerKategori.cshtml" />
     <Content Include="Views\Default\OmOs.cshtml" />
     <Content Include="Views\Default\ProduktListe.cshtml" />
->>>>>>> origin/master
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
