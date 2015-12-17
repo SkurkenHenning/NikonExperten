@@ -22,10 +22,10 @@
                         <p class="blackp">@Model.Overskrift</p>
                         <p class="blackp">@Model.Adresse</p>
                         <p class="blackp">DK-@Model.PostNr @Model.ByNavn</p>
-                        <br/>
+                        <br />
                         <p class="blackp">Tlf: @Model.Tlf</p>
                         <p class="blackp">Fax: @Model.Fax</p>
-                        <br/>
+                        <br />
                         <p class="blackp">@Model.Email</p>
                         <p class="blackp">@Model.HjemmesideLink</p>
                     </div>
@@ -40,9 +40,13 @@
                 <div class="twelve columns">
                     <div class="kontaktoverskrift">Åbningstider</div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="twelve columns">
-                    <div class="">
-                        
+                    <div class="Aabningsboks">
+                        <p class="blackp">Åbningstider i butikken</p>
+                        <br />
+                        <p class="blackp">@Model.Aabningstider</p>
                     </div>
                 </div>
             </div>
@@ -54,6 +58,30 @@
             <div class="row">
                 <div class="twelve columns">
                     <div class="kontaktoverskrift">Send os en mail</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns kontakt-padding">
+                    <table class="tableKon">
+                        <tr class="trKon">
+                            <td>Navn:</td>
+                            <td><input id="navn" type="text"/></td>
+                        </tr>
+                        <tr class="trKon">
+                            <td>E-mail:</td>
+                            <td><input id="email" type="text"/></td>
+                        </tr>
+                        <tr class="trKon">
+                            <td>Emne:</td>
+                            <td><input id="emne" type="text"/></td>
+                        </tr>
+                        <tr class="trKon">
+                            <td colspan="2"><textarea class="kontakt-textarea" id="TextArea1" rows="2" cols="20"></textarea></td>
+                        </tr>
+                        <tr class="trKon">
+                            <td colspan="2"><input id="Button1" type="button" value="button" /></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
