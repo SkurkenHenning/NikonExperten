@@ -12,11 +12,8 @@ namespace NikonExperten.Controllers
     {
         KategoriFac kf = new KategoriFac();
         MenuNavFac mnFac = new MenuNavFac();
-<<<<<<< HEAD
         KontaktFac konf = new KontaktFac();
-=======
         OmOsFac OO = new OmOsFac();
->>>>>>> origin/master
         // GET: Default
         public ActionResult Index(Kategori k)
         {
@@ -24,11 +21,11 @@ namespace NikonExperten.Controllers
             return View(kf.GetAll());
         }
 
-<<<<<<< HEAD
         public ActionResult Kontakt(Kontakt kon)
         {
             return View(konf.Get(1));
-=======
+        }
+
         public ActionResult OmOs()
         {
 
@@ -39,7 +36,6 @@ namespace NikonExperten.Controllers
         {
 
             return View(OO.GetAll());
->>>>>>> origin/master
         }
     }
 }

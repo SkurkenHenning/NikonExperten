@@ -1,5 +1,5 @@
 ﻿@using RepoNE
-@model List<Kategori>
+@model System.Collections.Generic.List<Kategori>
 @{
     ViewBag.Title = "OpretProdukt";
     Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
@@ -41,6 +41,10 @@
         Leveringstid:
         <br/>
         <input id="Leveringstid" name="Leveringstid" type="text" />
+        <br/>
+        Producent:
+        <br/>
+        <input id="Producent" name="Producent" type="text"/>
         <br/>
         <input id="Submit1" type="submit" value="Opret" />
 

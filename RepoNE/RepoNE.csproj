@@ -57,6 +57,8 @@
     <Compile Include="Models\MenuNav.cs" />
     <Compile Include="Models\OmOs.cs" />
     <Compile Include="Models\Produkt.cs" />
+    <Compile Include="Models\Viewmodels\EditProdukt.cs" />
+    <Compile Include="Models\Viewmodels\EditProduktForm.cs" />
     <Compile Include="Models\Viewmodels\KategoriProduktliste.cs" />
     <Compile Include="Models\Viewmodels\ProduktListe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

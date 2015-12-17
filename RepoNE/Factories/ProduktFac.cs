@@ -19,5 +19,14 @@ namespace RepoNE
             pl.listProdukt = GetBy("KatID", katID);
             return pl;
         }
+
+        public KategoriProduktliste GetKategoriProduktListe(int katID)
+        {
+            KategoriProduktliste kpListe = new KategoriProduktliste();
+
+            kpListe.listKategori = kf.GetAll();
+            kpListe.listProdukt = GetBy("KatID", katID);
+            return kpListe;
+        }
     }
 }

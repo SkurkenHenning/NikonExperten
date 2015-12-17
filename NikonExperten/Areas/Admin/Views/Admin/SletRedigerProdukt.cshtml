@@ -1,0 +1,45 @@
+﻿@using RepoNE
+@using RepoNE.Models.Viewmodels
+@model RepoNE.Models.Viewmodels.EditProdukt
+@{
+    ViewBag.Title = "SletRedigerProdukt";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+<h2>SletRedigerProdukt</h2>
+<form name="myForm" action="/Admin/Admin/SletRedigerProduktList/" enctype="multipart/form-data" method="POST">
+    @{
+        int kat = 0;
+
+        if (Model.Produktliste != null)
+        {
+            kat = Model.Produktliste.Kategori.ID;
+        }
+    }
+
+
+    <select id="KatID" name="KatID" onchange="this.form.submit();">
+        @foreach (Kategori k in Model.Kategorier)
+        {
+            if (k.ID == kat)
+            {
+                <option value="@k.ID" selected="selected">@k.Navn</option>
+            }
+            else
+            {
+                <option value="@k.ID">@k.Navn</option>
+            }
+
+
+        }
+    </select>
+</form>
+
+@if (Model.Produktliste != null)
+{
+    foreach (var p in Model.Produktliste.listProdukt)
+    {
+        <ul>
+            <li>@p.Navn <a href="/Admin/Admin/EditForm/@p.ID">Rediger</a> <a href="/Admin/Admin/Delete/@p.ID" onclick="javascript:return confirm('Er du sikker på at du vil slette @p.Navn?');">Slet</a></li>
+        </ul>
+    }
+}

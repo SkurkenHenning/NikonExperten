@@ -14,6 +14,7 @@ namespace NikonExperten.Areas.Admin.Controllers
     {
         KategoriFac kf = new KategoriFac();
         ProduktFac pf = new ProduktFac();
+        Uploader uploader = new Uploader();
             // GET: Admin/Admin
         public ActionResult Index()
         {
@@ -111,12 +112,63 @@ namespace NikonExperten.Areas.Admin.Controllers
             }
             return View("SletRedigerKategori", kf.GetAll());
         }
-
-        public ActionResult SletRedigerProdukt(KategoriProduktliste kpList)
-        {
-            return View();
+   
+        public ActionResult SletRedigerProdukt()
+        {   
+            EditProdukt ep = new EditProdukt();
+            ep.Kategorier = kf.GetAll();
+            return View(ep);
         }
-        
+
+        public ActionResult SletRedigerProduktList(int KatID)
+        {
+            EditProdukt ep = new EditProdukt();
+            ProduktListe pl = new ProduktListe();
+            ep.Kategorier = kf.GetAll();
+            pl.listProdukt = pf.GetBy("KatID", KatID);
+            pl.Kategori = kf.Get(KatID);
+            ep.Produktliste = pl;
+            return View("SletRedigerProdukt",  ep);
+        }
+
+        public ActionResult SletRedigerProduktForm(int id)
+        {
+            EditProduktForm epf = new EditProduktForm();
+            epf.Kategorier = kf.GetAll();
+            epf.Produkt = pf.Get(id);
+            return View(epf);
+        }
+
+        public ActionResult SletRedigerProduktResult(Produkt prod, HttpPostedFileBase fil)
+        {
+            if (fil != null)
+            {
+                string path = Request.PhysicalApplicationPath + "Content/images/Produkter/";
+                prod.Billede = Path.GetFileName(uploader.UploadImage(fil, path, 200, true));
+            }
+            else
+            {
+                prod.Billede = "ImageComing.jpg";
+            }
+
+            pf.Update(prod);
+
+
+            EditProduktForm epf = new EditProduktForm();
+            epf.Kategorier = kf.GetAll();
+            epf.Produkt = pf.Get(prod.ID);
+            ViewBag.MSG = "Produktet er opdateret";
+
+            return View("SletRedigerProduktForm", epf);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            pf.Delete(id);
+            return RedirectToAction("SletRedigerProdukt");
+        }
+
+
 
 
     }
